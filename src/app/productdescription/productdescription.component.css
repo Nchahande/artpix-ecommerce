@@ -1,0 +1,20 @@
+.row{
+  /* padding-top: 15%; */
+  padding: 10%;
+  background-color: gray;
+}
+
+.col-3{
+  /* border:  solid black; */
+  background-color: white;
+  padding: 0;
+}
+.col-7{
+  border: 1px solid black;
+  margin-left: 30px;
+   background-color: rgb(223, 219, 205);
+}
+
+.col-7>h3{
+ text-transform: capitalize;
+}

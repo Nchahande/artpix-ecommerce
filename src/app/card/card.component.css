@@ -1,0 +1,48 @@
+
+/* cards div apply on card.html*/
+.cards{
+  
+  color: rgb(27, 26, 26);
+  padding: 10%; 
+  background-image: url('https://i.pinimg.com/originals/6f/35/57/6f35579b3dafd4da38446707fc1a6896.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  left: 0;
+  margin-top: 0px;
+  margin-right: -15px;
+  margin-left: -15px;
+  overflow: auto;
+}
+
+/* 
+border of the 3 cards  */
+.col-4>h3>a>img{
+
+  border: 2px solid black;
+
+}
+
+/* on hover action on the card */
+.col-4>h3>a>img:hover{
+
+  opacity: 0.7;
+  padding: 15px;
+}
+
+
+
+
+/* container of the gallery below the three cards */
+.container{
+  padding:40px;
+}
+.row{
+  padding-top:40px;
+}
+
+.container p{
+  text-align: justify;
+  
+}

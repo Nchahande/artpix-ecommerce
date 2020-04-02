@@ -1,0 +1,41 @@
+<!--constant fixed navabr on top with profile icon and site name on left -->
+
+<div class="fixed-navbar" > 
+
+  <!-- name of the site -->
+  <h1><a  href="https://angular-9urxwc.stackblitz.io/"><strong>ArtPix</strong></a></h1>
+
+  <!-- modal of the icon which works on click -->
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- details of the modl profile -->
+    <div class="modal-body" *ngFor="let items of profile">
+
+      <!--take value fron the profile json file and read by the fixed-header.componenet.ts -->
+      <p><strong>Name:</strong>    {{items.name}}</p> 
+      <p><strong>Id:</strong>      {{items.id}}</p>
+      <p><strong>Address</strong>  {{items.address}}</p>
+    </div>
+    <!-- button to save the data -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">close</button>
+    </div>
+</ng-template>
+
+
+
+<!-- icon on the right corner which open modal on click -->
+<svg class="bi bi-people-circle" (click)="open(content)" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+  <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd" />
+</svg>
+
+</div>
+
+

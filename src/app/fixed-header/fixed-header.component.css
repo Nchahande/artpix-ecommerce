@@ -1,0 +1,33 @@
+.fixed-navbar{
+  height: 10%;
+  color:rgb(225, 238, 238);
+  background-color: rgb(8, 8, 8);
+  position: fixed;
+  width: 100%;
+  padding-top:10px;
+  justify-self: center;
+  justify-content: row;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0px;
+  opacity: 0.8;
+}
+
+.fixed-navbar svg{
+  float: right;
+  height: 78%;
+  width: 10%;
+  justify-content: items;
+  
+}
+
+.fixed-navbar h1 a{
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left:20px;
+  text-decoration: none;
+  color: cornsilk;
+  
+  
+}
